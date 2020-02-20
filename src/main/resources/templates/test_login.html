@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>学習サポートシステム</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<style type="text/css">
+body {
+	padding-top: 0px;
+}
+
+@media ( min-width : 768px ) {
+	#banner {
+		min-height: 300px;
+		border-bottom: none;
+	}
+	.bs-docs-section {
+		margin-top: 8em;
+	}
+	.bs-component {
+		position: relative;
+	}
+	.bs-component .modal {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: auto;
+		bottom: auto;
+		z-index: 1;
+		display: block;
+	}
+	.bs-component .modal-dialog {
+		width: 90%;
+	}
+	.bs-component .popover {
+		position: relative;
+		display: inline-block;
+		width: 220px;
+		margin: 20px;
+	}
+	.nav-tabs {
+		margin-bottom: 15px;
+	}
+	.progress {
+		margin-bottom: 10px;
+	}
+}
+</style>
+
+<!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap theme</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Theme example</h1>
+        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+      </div>
+      
+  <div class="page-header" id="banner">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <h1>Honoka</h1>
+        <p class="lead">Honoka is one of the original Bootstrap theme.</p>
+      </div>
+    </div>
+  </div>
+
+
+		<!-- Forms
+  ================================================== -->
+		<div class="bs-docs-section">
+			<div class="row">
+				<div class="col-lg-6 col-md-8">
+					<div class="well bs-component">
+						<form class="form-horizontal">
+							<fieldset>
+								<legend>
+									運営管理者ログイン
+								</legend>
+								<div class="form-group">
+									<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+									<div class="col-lg-10">
+										<label class="control-label" style="color: red"
+											for="inputError">メールアドレスを入力してください</label> <input type="text"
+											class="form-control" id="inputEmail" placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputPassword" class="col-lg-2 control-label">Password</label>
+									<div class="col-lg-10">
+										<label class="control-label" style="color: red"
+											for="inputError">パスワードを入力してください</label> <input
+											type="password" class="form-control" id="inputPassword"
+											placeholder="Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-lg-10 col-lg-offset-2">
+										<button type="submit" class="btn btn-primary">login</button>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<!--  end bs-component -->
+				</div>
+				<!-- end col-lg-6 -->
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end bs-docs-section -->
+	</div>
+	<!-- end container -->
+
+
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$('.bs-component [data-toggle="popover"]').popover();
+		$('.bs-component [data-toggle="tooltip"]').tooltip();
+	</script>
+
+</body>
+</html>
