@@ -75,8 +75,8 @@
 							<td><span th:text="${admin.name}">管理者太郎</span></td>
 							<td><span th:text="${admin.kana}">管理者太郎</span></td>
 							<td><span th:text="${admin.email}">rakus@123.com</span></td>
-							<span if="${!admin.CompanyList.get(0)== null}">
-							<td><span th:text="${admin.canShowAllCompany}"></span></td>
+							<span if="${admin.canShowAllCompany}">
+							<td><span th:text="すべて"></span></td>
 							</span>
 							<td><form th:action="@{/admin/toAdminEdit}" method="post">
 							<input type="hidden" name="id" th:value="${admin.id}">

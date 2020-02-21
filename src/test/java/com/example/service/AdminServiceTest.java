@@ -27,7 +27,7 @@ import com.example.repository.AdminRepository;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
-@Sql("classpath:/create.sql")
+@Sql("/create.sql")
 class AdminServiceTest {
 	@Autowired
 	AdminService adminService;
@@ -53,8 +53,8 @@ class AdminServiceTest {
 
 	@Test
 	public void 同じEmailの情報を持ってくる() {
-		Admin actual1 = adminService.findByEmail("yur0427jp@yahoo.co.jp");
-		assertNotNull(actual1);
+		Admin actual1 = adminService.findByEmail("yuri0427jp@yahoo.co.jp");
+		assertThat("actual1", is(notNullValue()));
 	}
 	@Test
 	public void 違う値を入れたらnullで返ってくる() {

@@ -69,7 +69,7 @@ public class AdminRepository {
 		
 	}
 	/**
-	 * 運営管理者を全権検索する.
+	 * 運営管理者を全件検索する.
 	 * 
 	 * @return adminList 運営管理者.
 	 */

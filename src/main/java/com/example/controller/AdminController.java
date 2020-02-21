@@ -15,7 +15,7 @@ import com.example.form.AdminForm;
 import com.example.service.AdminService;
 
 /**
- * 情報登録を操作するコントローラークラス.
+ * 運営管理者の情報を操作するコントローラークラス.
  * 
  * @author hiraokayuri
  *
