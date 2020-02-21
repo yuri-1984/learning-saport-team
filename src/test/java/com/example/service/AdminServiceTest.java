@@ -28,7 +28,7 @@ import com.example.repository.AdminRepository;
 @SpringBootTest
 @Transactional
 @Sql("/create.sql")
-class AdminServiceTest {
+class AdminServiceTest{
 	@Autowired
 	AdminService adminService;
 	@Autowired
