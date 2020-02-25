@@ -85,5 +85,17 @@ public class InstructorRepository {
 		return instructor;		
 				
 	}
+	
+	/**
+	 * 検索された文字で曖昧検索を行います.
+	 * @param name
+	 * @return 講師情報の一覧
+	 */
+	public List<Instructor> findByName(String name){
+		String IlikeSql = SQL +" WHERE name=:name";
+		SqlParameterSource param = new MapSqlParameterSource().addValue("name", '%' + name + '%');
+		return template.query(IlikeSql,param,rowMapper);
+		
+	}
 
 }

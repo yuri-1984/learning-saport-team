@@ -84,7 +84,7 @@ public class InstructorRepositoryTest {
 	}
 
 	@Test
-	public void 全件検索したら4件返ってくる() {
+	public void 全件検索したら3件返ってくる() {
 		List<Instructor>actualList = instructorRepository.findAll();
 		assertThat(actualList).hasSize(3);
 		

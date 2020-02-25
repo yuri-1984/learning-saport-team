@@ -53,13 +53,25 @@ public class InstructorService {
 	}
 	
 	/**
+	 * 講師の情報を1件検索する.
+	 * 
 	 * @param id
-	 * @return
+	 * @return instructor 1件の講師情報.
 	 */
 	public Instructor searchOne(Integer id) {
 		Instructor instructor = instructorRepository.load(id);
 		return instructor;
 		
+	}
+	
+	/**
+	 * 曖昧検索を行う.
+	 * 
+	 * @param name
+	 * @return 検索結果.
+	 */
+	public List<Instructor> searchByName(String name){
+		return instructorRepository.findByName(name);
 	}
 	
 
